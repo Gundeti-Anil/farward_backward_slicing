@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/anilkumar/Downloads/reentrency_slicing-master (2)/reentrency_slicing-master/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from slither.tools.documentation.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
